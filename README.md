@@ -14,11 +14,14 @@ Au début du projet, nous avions deux options :
 1. Créer des critères pour repérer les zones de textes à extraire « à la main » pour ensuite les numériser.
 2. Utiliser un outil intelligent que l'on entraînerait pour repérer les zones à extraire.
 
-Notre choix s'est porté sur la première option. La première étape pour repérer le paragraphe qui nous intéresse consiste à repérer son titre (« VERSIO ANTIQUA »). Pour cela, nous avons commencé par faire un traitement statistique sur les lignes et colonnes afin d'isoler les zones contenant les titres. Pour reconnaître le titre recherché, nous avons créé des étiquettes de ce titre pour les comparer avec les titres repérés via une comparaison cosinus. Une fois le titre repéré, il est alors facile d'encadrer le paragraphe. Une fois cela fait, on l'extrait avec OpenCV et on le passe dans l'OCR.
+Notre choix s'est porté sur la première option. La première étape pour repérer le paragraphe qui nous intéresse consiste à repérer son titre (« VERSIO ANTIQUA »). Pour cela, nous avons commencé par faire un traitement statistique sur les lignes et colonnes afin d'isoler les zones contenant les titres. Pour reconnaître le titre recherché, nous avons créé des étiquettes de ce titre pour les comparer avec les titres repérés via une comparaison cosinus. Une fois le titre repéré, il est alors facile d'encadrer le paragraphe. Enfin, on l'extrait avec OpenCV et on le passe dans l'OCR.
 
 ## III. Nos Outils
 
-- Python
-- OpenCV
+- Python (version 3.12.3)
+- OpenCV (version 4.12.0)
+- Matplotlib (version 3.10.3)
+- Numpy (version 2.0.2)
+- scipy.signal (version  1.14.1)
 
 ## IV. Dernière Version
